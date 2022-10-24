@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Using the Quotable API, add functionality to search for quotes by a particular keyword, and display results on a new page. 
+Using the [Quotable API](https://github.com/lukePeavey/quotable), add functionality to search for quotes by a particular keyword, and display results on a new page. 
 
 ### Versions
 
