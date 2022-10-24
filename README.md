@@ -27,8 +27,9 @@ As a visitor
 When I visit the landing page '/'
 And fill in the form with a keyword 
 And hit 'Search for Quotes'
-I am taken to '/quotes?query=<<keyword>>'
+I am taken to '/quotes'
 Where I see the TOTAL number of quotes that were found for that keyword
+As well as the keyword that's being used for the search
 As well as a list of the top 10 quotes that were found
 
 For each quote listed, I should see: 
