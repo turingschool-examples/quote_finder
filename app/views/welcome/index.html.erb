@@ -7,7 +7,7 @@
 </nav>
 <div class="search-quotes">
     <p class="subtitle">Find The Perfect Quote!</p>
-    <%= form_with url: '/search', method: 'get' do |f|%>
+    <%= form_with url: '/quotes', local: true, method: 'get' do |f|%>
         <%= f.text_field :query, placeholder: "keyword" %>
         <%= f.submit "Search for Quotes" %>
     <% end %>
