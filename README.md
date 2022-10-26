@@ -1,8 +1,13 @@
 # Quote Finder
 
-### Instructions
+### Instructions/Expectations
 
-Using the [Quotable API](https://github.com/lukePeavey/quotable), add functionality to search for quotes by a particular keyword, and display results on a new page. 
+Using the [Quotable API](https://github.com/lukePeavey/quotable), complete User Story 1 outlined below. Take your time, and read through the API documentation. For this assessment, we expect that you test any class that you create, and commit about every 15 minutes. 
+
+### Submission
+
+1. Make a PR to the `turingschool-examples` organization
+    - In the comment section, feel free to tell us how you felt about the assessment, or anything you'd like us to know.
 
 ### Versions
 
@@ -18,11 +23,6 @@ Ruby 2.7.2
 - `rails s`
 
 When you visit localhost, you should see a landing page with a form to search by keyword. The button to search by keyword will not work right away, and that is functionality that you'll be building out. 
-
-### Submission
-
-1. Make a PR to the `turingschool-examples` organization
-    - In the comment section, feel free to tell us how you felt about the assessment, or anything you'd like us to know.
 
 
 ### Assessment -- User Story 1
@@ -57,6 +57,7 @@ When I click on that link
 I'm taken to '/author'
 And I see that authors name, bio, and a link to their Wikipedia page
 ```
+Note: The API defaults to a fuzzy search, but there are other options you can specify.
 
 ### Extension 2 -- User Story 3
 ```
