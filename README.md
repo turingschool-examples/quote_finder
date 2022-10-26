@@ -45,3 +45,27 @@ For each quote listed, I should see:
 Notes:
 - If there are less than 10 quotes found for a particular search, then only return the quotes that were found. 
 - If the quote has no tags associated with it, do not list any categories for that quote.
+
+
+### Extension 1
+```
+As a visitor
+When I see my search results on '/quotes'
+I see that each authors name is a link
+When I click on that link
+I'm taken to '/author'
+And I see that authors name, bio, and a link to their Wikipedia page
+```
+
+### Extension 2
+```
+As a visitor
+When I see my search results on '/quotes'
+And click on an author's name
+I'm taken to '/author' 
+And I can now see a link to see all of that Author's quotes
+When I click that link
+I'm taken to '/author/quotes'
+Where I can see the Author's name, and all of their quotes listed
+```
+
