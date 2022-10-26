@@ -25,7 +25,7 @@ When you visit localhost, you should see a landing page with a form to search by
     - In the comment section, feel free to tell us how you felt about the assessment, or anything you'd like us to know.
 
 
-### The Task
+### Assessment -- User Story 1
 
 ```
 As a visitor
@@ -47,7 +47,7 @@ Notes:
 - If the quote has no tags associated with it, do not list any categories for that quote.
 
 
-### Extension 1
+### Extension 1 -- User Story 2
 ```
 As a visitor
 When I see my search results on '/quotes'
@@ -57,7 +57,7 @@ I'm taken to '/author'
 And I see that authors name, bio, and a link to their Wikipedia page
 ```
 
-### Extension 2
+### Extension 2 -- User Story 3
 ```
 As a visitor
 When I see my search results on '/quotes'
