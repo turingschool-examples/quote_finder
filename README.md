@@ -12,12 +12,17 @@ Ruby 2.7.2
 
 ### Setup
 
-- Clone this repo
+- Fork and clone this repo
 - `bundle install`
 - `rails db:{create,migrate}`
 - `rails s`
 
 When you visit localhost, you should see a landing page with a form to search by keyword. The button to search by keyword will not work right away, and that is functionality that you'll be building out. 
+
+### Submission
+
+1. Make a PR to the `turingschool-examples` organization
+    - In the comment section, feel free to tell us how you felt about the assessment, or anything you'd like us to know.
 
 
 ### The Task
