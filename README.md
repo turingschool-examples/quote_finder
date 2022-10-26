@@ -26,6 +26,7 @@ When you visit localhost, you should see a landing page with a form to search by
 
 
 ### Assessment -- User Story 1
+Update this application to have the functionality outlined in the story below:
 
 ```
 As a visitor
