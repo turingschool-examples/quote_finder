@@ -22,8 +22,28 @@ RSpec.describe 'Landing Page' do
 
         expect(current_path).to eq("/quotes")
 
-        expect(page).to have content('Quotes Matching Search For:')
+        expect(page).to have_content('Quotes Matching Search For:')
+
+        expect(page).to have_content('Iris Murdoch')
+        expect(page).to have_content('There is only one happiness in life, to love and be loved.')
+        expect(page).to have_content('tags:')
+        expect(page).to have_content('George Sand')
+        expect(page).to have_content('We can only learn to love by loving.')
+        expect(page).to have_content('Tags:')
       end
+    end
+    it 'if there was nothing found with that keyword, nothing will be displayed' do
+      visit root_path
+
+      fill_in :keyword, with: 'Kaelin Sleevi'
+
+      click_on "Search for Quotes"
+
+      expect(current_path).to eq("/quotes")
+
+      expect(page).to have_content('Quotes Matching Search For:')
+      expect(page).to_not have_content('Kaelin Sleevi')
+      expect(page).to_not have_content('Tags:')
     end
   end
 end

@@ -1,0 +1,7 @@
+<h1>Quotes Matching Search For: <%= "#{params[:query]}"%></h1>
+
+<% @quotes.each do |quote| %>
+ <ul>
+  <li><%= quote[:author] %> - <%= quote[:content] %> Tags: <%= quote[:tags].first %></li>
+ </ul>
+<% end %>
