@@ -11,7 +11,7 @@ RSpec.describe 'quotes index page' do
     expect(page).to have_content("Total Count: 151")
 
     within("#keyword") do
-    expect(page).to have_content("Keyword Used: I am")
+      expect(page).to have_content("Keyword Used: I am")
     end
   end
 
@@ -28,6 +28,18 @@ RSpec.describe 'quotes index page' do
       expect(page).to have_content("#{quote.content}")
       expect(page).to have_content("Author: #{quote.author}")
       expect(page).to have_content("Category: #{quote.category}")
+    end
+  end
+
+  describe 'edge case testing' do
+    it 'displays the quotes that were found if there were less than 10' do
+      visit root_path
+
+      fill_in :keyword, with: 'Mary'
+
+      click_on "Search for Quotes"
+
+      expect(page).to have_content("Total Count: 6")
     end
   end
 end
