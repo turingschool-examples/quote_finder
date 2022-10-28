@@ -1,4 +1,5 @@
-class QuoteFacade 
+class QuoteFacade
+
   def self.search_term(input)
     json = QuoteService.search_by_input(input)
 
