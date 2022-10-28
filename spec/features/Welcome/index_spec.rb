@@ -11,7 +11,7 @@ RSpec.describe 'Landing Page' do
     expect(current_path).to eq("/quotes")
   end
 
-  it 'returns a list of up to 10 quotes based on search parameters' do
+  it 'can return a list of up to 10 quotes based on search parameters' do
     visit root_path
     fill_in :keyword, with: 'hands'
     click_on "Search for Quotes"
