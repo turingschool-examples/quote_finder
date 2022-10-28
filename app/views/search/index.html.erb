@@ -1,0 +1,18 @@
+<br>
+<br>
+Searched for '<%= @query.titleize %>' Quotes
+<br>
+<br>
+Top Results: <br>
+<hr>
+<% @top_results.each do |quote| %>
+  <i>"<%= quote.content %>" </i> <br>
+  - <b> <%= quote.author %>, </b> 
+  tags: <% quote.tags.each do |tag| %>
+          <%= tag.titleize  %>
+        <% end %> <br>
+         <br>
+<% end %>
+<hr>
+
+Total Results: <%= number_with_delimiter(@result_count) %><br>
