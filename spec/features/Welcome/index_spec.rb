@@ -10,4 +10,12 @@ RSpec.describe 'Landing Page' do
 
     expect(current_path).to eq("/quotes")
   end
+
+  it "redirects to root if search is empty" do
+    visit root_path
+
+    click_on "Search for Quotes"
+
+    expect(current_path).to eq("/")
+  end
 end
