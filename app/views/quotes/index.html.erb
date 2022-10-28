@@ -1,2 +1,13 @@
+
+<h4> Number of quotes found: <%= @quotes.count %> </h4>
+<h4> Search keyword(s): <%= params[:query] %> </h4>
+
 <% @quotes.each do |quote| %>
-  
+
+  <p> Quote: <%= quote.content %> </p>
+  <p> Author: <%= quote.author %> </p>
+  <p> Category: <% quote.tags.each do |tag| %> </p>
+    <%= tag %>
+    <% end %>
+  <% end %>
+

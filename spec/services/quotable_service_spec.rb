@@ -6,5 +6,7 @@ RSpec.describe 'Quotable Service' do
 
     expect(response).to be_a(Hash)
     expect(response[:results]).to be_a(Array)
+
+    QuotableFacade.quote_search("I am")
   end
 end
