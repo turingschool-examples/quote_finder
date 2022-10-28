@@ -16,7 +16,6 @@ RSpec.describe Quote, :vcr, type: :object do
       response = QuotesService.quotes('life happiness')
       quote = response[:results][0]
       quote_attributes_obj(Quote.new(quote))
-      binding.pry
     end
   end
 end
