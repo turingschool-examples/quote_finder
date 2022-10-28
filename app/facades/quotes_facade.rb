@@ -3,8 +3,9 @@
 class QuotesFacade
   def self.create_quotes(keyword)
     response = QuotesService.quotes(keyword)
-    response[:results].map do |quote|
+    arr = response[:results].map do |quote|
       Quote.new(quote)
     end
+    [arr, response[:totalCount]]
   end
 end
