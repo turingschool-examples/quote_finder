@@ -18,7 +18,7 @@ RSpec.describe 'quotes index' do
   end
 
   it 'will show the top 10 quotes, the author, and the categories of the quote' do
-    quotes = QuoteService.search_by_input("love")
+    quotes = QuoteFacade.search_term("love")
     quote = quotes.first
 
     visit '/'
@@ -26,7 +26,7 @@ RSpec.describe 'quotes index' do
     click_on 'Search for Quotes'
     # As well as a list of the top 10 quotes that were found
     expect(page).to have_content("Top 10 quotes:")
-    save_and_open_page
+
     expect(page).to have_content(quote.content)
     expect(page).to have_content(quote.author)
     quote.categories.each do |category|
