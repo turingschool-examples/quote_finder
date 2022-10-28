@@ -7,8 +7,6 @@ RSpec.describe 'Landing Page' do
     fill_in :keyword, with: 'I am'
     
     click_on "Search for Quotes"
-    save_and_open_page
-
     expect(current_path).to eq("/quotes")
   end
 end

@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root to: 'landing_page#index'
   post '/quotes', to: 'quotes#search'
-  resources :quotes
+  resources :quotes, only: [:index, :show]
 end

@@ -1,6 +1,6 @@
 <h2 id="search_quote" class="text-info">Search For Quote</h2>
 <section id="quote_search_form">
-  <%= form_with url: quotes_path, local: :true, class: "d-flex flex-column g-3 container-sm" do |form| %>
+  <%= form_with url: quotes_path, method: :get, local: :true, class: "d-flex flex-column g-3 container-sm" do |form| %>
     <%= form.label :keyword, "Search For Quotes by Keyword", class: 'text-info fs-4 col-form-label-sm' %>
     <div class="col-sm-3">
       <%= form.text_field :keyword, placeholder: "enter keyword", class: "form-control form-control-sm" %>
@@ -10,3 +10,4 @@
     </div>
 <% end %>
 </section>
+
