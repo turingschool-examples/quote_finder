@@ -1,0 +1,11 @@
+<h1>Search Results</h1>
+
+<ul>
+  <% @quotes.each do |quote| %>
+    <li>
+      <p><%= quote.content %></p>
+      <p>- <%= quote.author %></p>
+      <p>Tags: </p>
+    </li>
+  <% end %>
+</ul>

@@ -1,5 +1,5 @@
 class QuotesController < ApplicationController
   def index
-    query = params[:query]
+    @quotes = QuotesFacade.top_10(params[:query])
   end
 end
