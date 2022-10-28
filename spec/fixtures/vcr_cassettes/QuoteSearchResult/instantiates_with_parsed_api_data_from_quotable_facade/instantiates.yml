@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?query=magic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1558'
+      Etag:
+      - W/"616-NcCWEnVpJ6T9IqUPy4eOmQBRwkE"
+      Date:
+      - Fri, 28 Oct 2022 16:14:42 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"count":5,"totalCount":5,"page":1,"totalPages":1,"lastItemIndex":null,"results":[{"_id":"T6AMWsNRE5","content":"Any
+        sufficiently advanced technology is equivalent to magic.","author":"Arthur
+        C. Clarke","tags":["technology"],"authorId":"1QYR63wh3","authorSlug":"arthur-c-clarke","length":60,"dateAdded":"2020-01-26","dateModified":"2020-01-26"},{"_id":"lOjXfROWf1n","content":"Real
+        magic in relationships means an absence of judgement of others.","author":"Wayne
+        Dyer","tags":["famous-quotes"],"authorId":"CLxflG5QMMjg","authorSlug":"wayne-dyer","length":68,"dateAdded":"2020-12-08","dateModified":"2020-12-08"},{"_id":"DiIyvrMPCZUK","content":"The
+        universe is full of magical things, patiently waiting for our wits to grow
+        sharper.","author":"Eden Phillpotts","tags":["wisdom"],"authorId":"qaLujpsc9zLA","authorSlug":"eden-phillpotts","length":87,"dateAdded":"2019-01-14","dateModified":"2022-07-04"},{"_id":"un7fRc7cVivc","content":"Patience
+        and perseverance have a magical effect before which difficulties disappear
+        and obstacles vanish.","author":"John Adams","tags":["famous-quotes"],"authorId":"dM6IxwSVqQ0l","authorSlug":"john-adams","length":105,"dateAdded":"2019-06-27","dateModified":"2019-06-27"},{"_id":"9sm_GJbP-2s_","content":"This
+        world, after all our science and sciences, is still a miracle; wonderful,
+        inscrutable, magical and more, to whosoever will think of it.","author":"Thomas
+        Carlyle","tags":["famous-quotes"],"authorId":"sTK7Nn46drMi","authorSlug":"thomas-carlyle","length":140,"dateAdded":"2020-01-15","dateModified":"2020-01-15"}]}'
+  recorded_at: Fri, 28 Oct 2022 16:14:42 GMT
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?limit=10&query=magic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1558'
+      Etag:
+      - W/"616-NcCWEnVpJ6T9IqUPy4eOmQBRwkE"
+      Date:
+      - Fri, 28 Oct 2022 16:51:43 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"count":5,"totalCount":5,"page":1,"totalPages":1,"lastItemIndex":null,"results":[{"_id":"T6AMWsNRE5","content":"Any
+        sufficiently advanced technology is equivalent to magic.","author":"Arthur
+        C. Clarke","tags":["technology"],"authorId":"1QYR63wh3","authorSlug":"arthur-c-clarke","length":60,"dateAdded":"2020-01-26","dateModified":"2020-01-26"},{"_id":"lOjXfROWf1n","content":"Real
+        magic in relationships means an absence of judgement of others.","author":"Wayne
+        Dyer","tags":["famous-quotes"],"authorId":"CLxflG5QMMjg","authorSlug":"wayne-dyer","length":68,"dateAdded":"2020-12-08","dateModified":"2020-12-08"},{"_id":"DiIyvrMPCZUK","content":"The
+        universe is full of magical things, patiently waiting for our wits to grow
+        sharper.","author":"Eden Phillpotts","tags":["wisdom"],"authorId":"qaLujpsc9zLA","authorSlug":"eden-phillpotts","length":87,"dateAdded":"2019-01-14","dateModified":"2022-07-04"},{"_id":"un7fRc7cVivc","content":"Patience
+        and perseverance have a magical effect before which difficulties disappear
+        and obstacles vanish.","author":"John Adams","tags":["famous-quotes"],"authorId":"dM6IxwSVqQ0l","authorSlug":"john-adams","length":105,"dateAdded":"2019-06-27","dateModified":"2019-06-27"},{"_id":"9sm_GJbP-2s_","content":"This
+        world, after all our science and sciences, is still a miracle; wonderful,
+        inscrutable, magical and more, to whosoever will think of it.","author":"Thomas
+        Carlyle","tags":["famous-quotes"],"authorId":"sTK7Nn46drMi","authorSlug":"thomas-carlyle","length":140,"dateAdded":"2020-01-15","dateModified":"2020-01-15"}]}'
+  recorded_at: Fri, 28 Oct 2022 16:51:43 GMT
+recorded_with: VCR 6.1.0

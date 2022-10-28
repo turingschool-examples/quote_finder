@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Landing Page' do
+RSpec.describe 'Landing Page', vcr: { record: :new_episodes } do
   it "can fill in form with a keyword, hit submit and redirect to quotes index" do
     visit root_path
 
