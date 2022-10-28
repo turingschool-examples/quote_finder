@@ -6,5 +6,6 @@ RSpec.describe 'QuoteFacade' do
 
     expect(quotes).to be_an(Array)
     expect(quotes).to be_all(Quote)
+    expect(quotes.length).to be <= 10
   end
 end
