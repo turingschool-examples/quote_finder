@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe QuotesService do
-  it 'can return a list of quotes with a given keyword' do
+  xit 'can return a list of quotes with a given keyword' do
     query = "test"
     response = QuotesService.search_quotes(query)
 
