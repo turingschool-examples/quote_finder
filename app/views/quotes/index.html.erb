@@ -1,0 +1,10 @@
+<h1>Search Results: <%=@search_term%> </h1>
+<p>Total quotes: <%= @results.num_results %></p>
+
+<% @results.quotes.each_with_index do |quote, index| %>
+  <div id="quote-<%= index %>">
+    <p><%= quote.content %> </p>
+    <p>Author: <%= quote.author %></p>
+    <p>Category: <%= quote.category.join(', ') %>
+  </div>
+<% end %>
