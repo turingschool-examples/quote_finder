@@ -5,7 +5,7 @@
 
   <h3><%= quote.content %></h3>
   <p>Author: <%= quote.author %></p>
-  <% if quote.tags != []%>
+  <% if quote.tags != [] && quote.tags != nil%>
     Categories:
     <% quote.tags.each do |tag| %>
       <p><%= tag %></p>
