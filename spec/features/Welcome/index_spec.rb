@@ -10,4 +10,8 @@ RSpec.describe 'Landing Page' do
 
     expect(current_path).to eq("/quotes")
   end
+
+  it 'displays the total number of quotes that were found for the filled in keyword' do
+
+  end
 end
