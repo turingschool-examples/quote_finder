@@ -7,6 +7,7 @@ RSpec.describe QuotesService do
 
     expect(response).to be_a(Hash)
     expect(response).to have_key(:count)
+    expect(response[:count]).to eq(10)
     expect(response).to have_key(:totalCount)
     expect(response).to have_key(:page)
     expect(response).to have_key(:totalPages)

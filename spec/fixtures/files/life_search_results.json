@@ -1,0 +1,140 @@
+{
+  "count": 10,
+  "totalCount": 170,
+  "page": 1,
+  "totalPages": 17,
+  "lastItemIndex": 10,
+  "results": [
+      {
+          "_id": "4uAgduNKEAKW",
+          "content": "For everything that lives is holy, life delights in life.",
+          "author": "William Blake",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "7VD7ORpP-19B",
+          "authorSlug": "william-blake",
+          "length": 57,
+          "dateAdded": "2020-05-21",
+          "dateModified": "2020-05-21"
+      },
+      {
+          "_id": "XE3tAalt0C9H",
+          "content": "The person who lives life fully, glowing with life's energy, is the person who lives a successful life.",
+          "author": "Daisaku Ikeda",
+          "tags": [
+              "success"
+          ],
+          "authorId": "f4Q5BtDWomhv",
+          "authorSlug": "daisaku-ikeda",
+          "length": 103,
+          "dateAdded": "2019-09-19",
+          "dateModified": "2022-07-04"
+      },
+      {
+          "_id": "VsarQ0iEgE1",
+          "content": "Life isn't about finding yourself. Life is about creating yourself.",
+          "author": "Bernard Shaw",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "gk8iLycW0DFC",
+          "authorSlug": "bernard-shaw",
+          "length": 67,
+          "dateAdded": "2021-03-28",
+          "dateModified": "2021-03-28"
+      },
+      {
+          "_id": "Dp-ZJ6WsmYqu",
+          "content": "Where there is love there is life.",
+          "author": "Mahatma Gandhi",
+          "tags": [
+              "wisdom"
+          ],
+          "authorId": "4J6_dx73YbT5",
+          "authorSlug": "mahatma-gandhi",
+          "length": 34,
+          "dateAdded": "2020-02-27",
+          "dateModified": "2022-07-04"
+      },
+      {
+          "_id": "3VC1Tk541UV",
+          "content": "Life is a progress, and not a station.",
+          "author": "Ralph Waldo Emerson",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "xEVEeQ7m4KQT",
+          "authorSlug": "ralph-waldo-emerson",
+          "length": 38,
+          "dateAdded": "2021-01-30",
+          "dateModified": "2021-01-30"
+      },
+      {
+          "_id": "I4MksjS5zey",
+          "author": "Carl Lewis",
+          "content": "Life is about timing.",
+          "tags": [
+              "sports",
+              "competition"
+          ],
+          "authorId": "6_H0cQA6A54",
+          "authorSlug": "carl-lewis",
+          "length": 21,
+          "dateAdded": "2022-07-06",
+          "dateModified": "2022-07-08"
+      },
+      {
+          "_id": "4Fw5Fu7aOG",
+          "content": "Dost thou love life? Then do not squander time, for that is the stuff life is made of.",
+          "author": "Benjamin Franklin",
+          "tags": [
+              "wisdom"
+          ],
+          "authorId": "xkvcrqREjoOB",
+          "authorSlug": "benjamin-franklin",
+          "length": 86,
+          "dateAdded": "2020-11-13",
+          "dateModified": "2020-11-13"
+      },
+      {
+          "_id": "MONDu5bf8JmU",
+          "content": "If you love life, don't waste time, for time is what life is made up of.",
+          "author": "Bruce Lee",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "raaFe2cXACnG",
+          "authorSlug": "bruce-lee",
+          "length": 72,
+          "dateAdded": "2020-03-07",
+          "dateModified": "2020-03-07"
+      },
+      {
+          "_id": "3D8-OOvWjQi",
+          "author": "Woody Allen",
+          "content": "Life is divided into the horrible and the miserable.",
+          "tags": [
+              "film"
+          ],
+          "authorId": "7tvBr_cHW",
+          "authorSlug": "woody-allen",
+          "length": 52,
+          "dateAdded": "2020-01-12",
+          "dateModified": "2020-01-12"
+      },
+      {
+          "_id": "sCR2ucyf1idj",
+          "content": "The energy of the mind is the essence of life.",
+          "author": "Aristotle",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "Z8j-PYl90GLF",
+          "authorSlug": "aristotle",
+          "length": 46,
+          "dateAdded": "2019-09-19",
+          "dateModified": "2019-09-19"
+      }
+  ]
+}
