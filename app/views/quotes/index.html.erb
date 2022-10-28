@@ -1,11 +1,12 @@
 <h1>Top 10 quotes for <%= @keyword %></h1>
 <h2>Total number of quotes found for '<%= @keyword %>': <%= @total_count %> </h2>
-
 <% @quotes.each do |quote| %>
   <h2>Quote: </h2><p><%= quote.quote %></p>
   <h2>Author: </h2><p><%= quote.author %></p>
+<% unless quote.categories.empty? %>
   <h4>Categories: </h4>
- <% quote.categories.each do |category| %>
-    <p><%= category %> </p>
-    <% end %>
+  <% quote.categories.each do |category| %>
+      <p><%= category %> </p>
+      <% end %>
+  <% end %>
 <% end %>
