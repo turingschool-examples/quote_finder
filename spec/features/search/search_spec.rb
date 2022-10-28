@@ -41,7 +41,30 @@ RSpec.describe 'search results page', type: :feature do
         end
       end
 
-      xit 'If the quote has no tags associated with it, do not list any categories for that quote.'
+      it 'If the quote has no tags associated with it, do not list any categories for that quote.' do
+        visit root_path
+        fill_in :keyword, with: 'Alaina'
+        click_on "Search for Quotes"
+
+        expect(current_path).to eq(quotes_path)
+        expect(page).to have_content('Total Number of Quotes: 0')
+      end
+
+      it "I see that each authors name is a link When I click on that link I'm taken to '/author' And I see that authors name, bio, and a link to their Wikipedia page" do
+      visit root_path
+      fill_in :keyword, with: 'I am'
+      click_on "Search for Quotes"
+      expect(page).to have_link("Rabbi Hillel")
+      # click_on "Rabbi Hillel"
+      # expect(current_path).to eq("/author")
+      # expect(page).to have_link("wiki page")
+      # expect(page).to have_content("Rabbi Hillel")
+      # expect(page).to have_content("Bio")
+      # click_on "wiki page"
+      # expect(current_path).to eq("wiki link")
+      end
     end
   end
 end
+
+

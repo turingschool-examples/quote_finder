@@ -6,8 +6,8 @@ class QuoteFacade
     end
   end
 
-  def self.get_total(searched_string) #consider moving this in with the method above
-    json = QuoteService.get_total(searched_string)
+  def self.get_total(searched_string)
+    json = QuoteService.get_quotes_info(searched_string)
     json[:totalCount]
   end
 end
