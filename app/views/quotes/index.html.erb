@@ -1,11 +1,14 @@
+
+
 <%@quotes.each do |quote|%>
 
-<p> Quote: <%= quote.content %> </p>
-<p> Author: <%= quote.author %> </p>
-<p> Categories: <% quote.tags.each do |category| %>
-    <ul> <%= category %></ul>
-    <%end%>
-</p>
-<br>
-<br>
+  <p> Quote: <%= quote.content %> </p>
+  <p> Author: <%= quote.author %> </p>
+  <p> Categories: <% quote.tags.each do |category| %>
+      <ul> <%= category %></ul>
+      <%end%>
+  </p>
+  <br>
+  <br>
 <% end%>
+

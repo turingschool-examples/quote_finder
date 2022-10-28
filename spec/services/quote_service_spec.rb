@@ -13,4 +13,14 @@ RSpec.describe QuoteService do
     expect(quote_result_1).to have_key(:author)
     expect(quote_results.last.keys.count).to eq(9)
   end
+
+  it 'works when nothing matches' do
+    quote_raw_data = QuoteService.get_quotes("Aleisha")
+    
+    
+    expect(quote_raw_data[:count]).to eq(0)
+    expect(quote_raw_data).to be_a(Hash)
+    expect(quote_raw_data[:results]).to be_a(Array)
+    expect(quote_raw_data[:results].count).to eq(0)
+  end
 end
