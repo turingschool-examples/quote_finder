@@ -4,14 +4,7 @@ require "rails_helper"
 
 RSpec.describe Quote do
   it "exists" do
-    data = {
-        "count": 1,
-        "totalCount": 1,
-        "page": 1,
-        "totalPages": 1,
-        #"lastItemIndex": null,
-        "results": [
-            {
+    data =  {
                 "_id": "r3wAKE9N-Nei",
                 "content": "Imagination will often carry us to worlds that never were. But without it we go nowhere.",
                 "author": "Carl Sagan",
@@ -24,8 +17,6 @@ RSpec.describe Quote do
                 "dateAdded": "2020-02-07",
                 "dateModified": "2020-02-07"
             }
-        ]
-    }
 
     quote = Quote.new(data)
 

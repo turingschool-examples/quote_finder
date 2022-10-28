@@ -4,8 +4,8 @@ class Quote
                 :categories
   
     def initialize(data)
-      @content = data[:results][0][:content]
-      @author = data[:results][0][:author]
-      @categories = data[:results][0][:tags]
+      @content = data[:content]
+      @author = data[:author]
+      @categories = data[:tags]
     end
 end  
