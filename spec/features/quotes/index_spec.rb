@@ -8,7 +8,7 @@ RSpec.describe 'Quotes Index Page' do
     fill_in :keyword, with: 'Sagan'
     click_on "Search for Quotes"
     expect(current_path).to eq("/quotes")
-    expect(page).to have_content 'Results for "sagan"'
+    expect(page).to have_content 'Results for "Sagan"'
     expect(page).to have_content 'Total Quotes: 1'
     expect(page).to have_content 'Author: Carl Sagan'
     expect(page).to have_content 'Categories: famous-quotes'
