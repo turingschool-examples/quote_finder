@@ -1,7 +1,7 @@
 class QuoteFacade
   def self.quote_search(quote)
-    results = service.get_quotes_search(quote)
-    results[:results].map do |attributes|
+    results = service.get_quotes_search(quote)[:results]
+    results.map do |attributes|
       Quote.new(attributes)
     end
   end

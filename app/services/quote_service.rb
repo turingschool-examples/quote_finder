@@ -7,9 +7,7 @@ class QuoteService
   private
 
   def conn
-    Faraday.new(url: 'https://api.quotable.io/') do |faraday|
-      faraday.params['api_key'] = ENV['api_key']
-    end
+    Faraday.new(url: 'https://api.quotable.io/')
   end
 
   def parsed(response)
