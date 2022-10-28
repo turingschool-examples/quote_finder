@@ -26,7 +26,15 @@ RSpec.describe "Quote Index Page", type: :feature do
           expect(page).to have_content(@quotes[:quotes][0].content)
           expect(page).to have_content(@quotes[:quotes][0].categories[0])
         end
-        
+      end
+
+      it "If I search for a keyword that has no quotes I see the results page listing 0 total results" do
+        visit root_path
+        fill_in :keyword, with: 'Aleisha'
+        click_on "Search for Quotes"
+
+        expect(page).to have_content("Total number of quotes found: 0")
+        expect(page).to have_content("Aleisha")
       end
     end
   end
