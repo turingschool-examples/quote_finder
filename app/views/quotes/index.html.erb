@@ -1,0 +1,10 @@
+<h1>Search Results </h1>
+
+<h4>Total Count: <%=@count%></h4>
+<h4>Results on this page: <%=@quotes.count%></h4>
+
+<h2>Quote Matches</h2>
+<% @quotes.each do |quote| %>
+  <p>Author: <%=quote.author%></p>
+  <p>Category: <%=quote.category%></p>
+<%end%>
