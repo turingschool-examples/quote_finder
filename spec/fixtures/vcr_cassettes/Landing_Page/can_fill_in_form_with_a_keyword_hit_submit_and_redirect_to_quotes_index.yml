@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?query=I%20am
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6034'
+      Etag:
+      - W/"1792-Pi+JTCMiPgielAmP6L0EODiGCuc"
+      Date:
+      - Fri, 28 Oct 2022 16:55:07 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"count":20,"totalCount":151,"page":1,"totalPages":8,"lastItemIndex":20,"results":[{"_id":"OHNMF1vCnPFE","content":"If
+        I am not for myself, who will be for me? If I am not for others, what am I?
+        And if not now, when?","author":"Rabbi Hillel","tags":["famous-quotes","wisdom"],"authorId":"cII2_MfYV9sI","authorSlug":"rabbi-hillel","length":100,"dateAdded":"2019-01-08","dateModified":"2022-07-04"},{"_id":"uQwITry_sQQv","content":"I
+        am not bothered by the fact that I am unknown. I am bothered when I do not
+        know others.","author":"Confucius","tags":["wisdom"],"authorId":"ropvZKOXYhLr","authorSlug":"confucius","length":89,"dateAdded":"2020-02-22","dateModified":"2022-07-04"},{"_id":"Vs-4YEGn","content":"I
+        can, therefore I am.","author":"Simone Weil","tags":["inspirational"],"authorId":"bUP0cHEuKQBn","authorSlug":"simone-weil","length":22,"dateAdded":"2020-03-11","dateModified":"2020-03-11"},{"_id":"DvEuabi2lH8","content":"I
+        think and that is all that I am.","author":"Wayne Dyer","tags":["famous-quotes"],"authorId":"CLxflG5QMMjg","authorSlug":"wayne-dyer","length":34,"dateAdded":"2020-07-10","dateModified":"2020-07-10"},{"_id":"cgBH5dPFK-jC","content":"I
+        care not so much what I am to others as what I am to myself. I will be rich
+        by myself, and not by borrowing.","author":"Michel de Montaigne","tags":["famous-quotes"],"authorId":"B2lKC8XK8Dh7","authorSlug":"michel-de-montaigne","length":110,"dateAdded":"2021-04-08","dateModified":"2021-04-08"},{"_id":"wPJ_Mb4EjPlE","content":"Mind
+        is everything: muscle, pieces of rubber. All that I am, I am because of my
+        mind.","author":"Paavo Nurmi","tags":["famous-quotes"],"authorId":"SckF0U8Iy85M","authorSlug":"paavo-nurmi","length":85,"dateAdded":"2019-12-13","dateModified":"2019-12-13"},{"_id":"nZtnCW3_6S","author":"Abraham
+        Lincoln","content":"I am not bound to win, but I am bound to be true. I am
+        not bound to succeed, but I am bound to live by the light that I have. I must
+        stand with anybody that stands right, and stand with him while he is right,
+        and part with him when he goes wrong.","tags":["inspirational","history","truth"],"authorId":"8k75S1ntV9GW","authorSlug":"abraham-lincoln","length":246,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"0mvbtxiIrRtQ","content":"When
+        I let go of what I am, I become what I might be.","author":"Laozi","tags":["wisdom"],"authorId":"qsaptKSHuLDU","authorSlug":"laozi","length":53,"dateAdded":"2021-01-19","dateModified":"2022-07-04"},{"_id":"JBJV1OZ3ARcw","content":"I
+        have no special talent. I am only passionately curious.","author":"Albert
+        Einstein","tags":["famous-quotes"],"authorId":"L76FRuEeGIUJ","authorSlug":"albert-einstein","length":57,"dateAdded":"2020-02-07","dateModified":"2020-02-07"},{"_id":"ubJ9lY7Ark","author":"Abraham
+        Lincoln","content":"All that I am, or hope to be, I owe to my angel mother.","tags":["family"],"authorId":"8k75S1ntV9GW","authorSlug":"abraham-lincoln","length":55,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"I5zMVI_HGM","content":"Sometimes
+        I am happy and sometimes not. I am, after all, a human being, you know. And
+        I am glad that we are sometimes happy and sometimes not. You get your wisdom
+        working by having different emotions.","author":"Yoko Ono","tags":["wisdom"],"authorId":"XtanJziaLn","authorSlug":"yoko-ono","length":200,"dateAdded":"2020-02-22","dateModified":"2020-02-22"},{"_id":"MftnYcoJsQc3","content":"I
+        gave my life to become the person I am right now. Was it worth it?","author":"Richard
+        Bach","tags":["famous-quotes"],"authorId":"t9lNqDH0TmYo","authorSlug":"richard-bach","length":68,"dateAdded":"2020-09-29","dateModified":"2020-09-29"},{"_id":"9pQeVJgxcsKT","content":"I
+        am always doing that which I cannot do, in order that I may learn how to do
+        it.","author":"Pablo Picasso","tags":["famous-quotes"],"authorId":"atthH9QDwIJB","authorSlug":"pablo-picasso","length":81,"dateAdded":"2019-12-13","dateModified":"2021-06-17"},{"_id":"HHvawzJ0YMs3","content":"I
+        am always doing that which I cannot do, in order that I may learn how to do
+        it.","author":"Pablo Picasso","tags":["famous-quotes"],"authorId":"atthH9QDwIJB","authorSlug":"pablo-picasso","length":81,"dateAdded":"2020-03-27","dateModified":"2020-03-27"},{"_id":"O6hRD-ilnV8","author":"Winston
+        Churchill","content":"I am always ready to learn although I do not always
+        like being taught.","tags":["humor"],"authorId":"FEM0nF4bj5r7","authorSlug":"winston-churchill","length":70,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"v88YjiHVIp","author":"Mia
+        Hamm","content":"I am building a fire, and everyday I train, I add more fuel.
+        At just the right moment, I light the match.","tags":["sports","competition"],"authorId":"aoDPmwXKCJ","authorSlug":"mia-hamm","length":105,"dateAdded":"2022-07-06","dateModified":"2022-07-08"},{"_id":"wuOv2OTZU0JD","content":"I
+        am of the opinion that my life belongs to the community, and as long as I
+        live it is my privilege to do for it whatever I can.","author":"Bernard Shaw","tags":["famous-quotes"],"authorId":"gk8iLycW0DFC","authorSlug":"bernard-shaw","length":128,"dateAdded":"2021-03-08","dateModified":"2021-03-08"},{"_id":"EbwcJxDo-wVb","content":"I
+        am a man of fixed and unbending principles, the first of which is to be flexible
+        at all times.","author":"Everett Dirksen","tags":["famous-quotes"],"authorId":"IPLorBCyTO3e","authorSlug":"everett-dirksen","length":96,"dateAdded":"2020-04-14","dateModified":"2020-04-14"},{"_id":"VFuYWRR2yM","author":"Winston
+        Churchill","content":"I am an optimist. It does not seem too much use being
+        anything else.","tags":[],"authorId":"FEM0nF4bj5r7","authorSlug":"winston-churchill","length":68,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"QGY0TiFjpdj2","content":"When
+        I dare to be powerful, to use my strength in the service of my vision, then
+        it becomes less and less important whether I am afraid.","author":"Audre Lorde","tags":["famous-quotes"],"authorId":"ykLNBe560sqb","authorSlug":"audre-lorde","length":136,"dateAdded":"2019-02-20","dateModified":"2019-02-20"}]}'
+  recorded_at: Fri, 28 Oct 2022 16:55:07 GMT
+- request:
+    method: get
+    uri: https://api.quotable.io/search/quotes?query=I%20am
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6034'
+      Etag:
+      - W/"1792-Pi+JTCMiPgielAmP6L0EODiGCuc"
+      Date:
+      - Fri, 28 Oct 2022 16:55:07 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"count":20,"totalCount":151,"page":1,"totalPages":8,"lastItemIndex":20,"results":[{"_id":"OHNMF1vCnPFE","content":"If
+        I am not for myself, who will be for me? If I am not for others, what am I?
+        And if not now, when?","author":"Rabbi Hillel","tags":["famous-quotes","wisdom"],"authorId":"cII2_MfYV9sI","authorSlug":"rabbi-hillel","length":100,"dateAdded":"2019-01-08","dateModified":"2022-07-04"},{"_id":"uQwITry_sQQv","content":"I
+        am not bothered by the fact that I am unknown. I am bothered when I do not
+        know others.","author":"Confucius","tags":["wisdom"],"authorId":"ropvZKOXYhLr","authorSlug":"confucius","length":89,"dateAdded":"2020-02-22","dateModified":"2022-07-04"},{"_id":"Vs-4YEGn","content":"I
+        can, therefore I am.","author":"Simone Weil","tags":["inspirational"],"authorId":"bUP0cHEuKQBn","authorSlug":"simone-weil","length":22,"dateAdded":"2020-03-11","dateModified":"2020-03-11"},{"_id":"DvEuabi2lH8","content":"I
+        think and that is all that I am.","author":"Wayne Dyer","tags":["famous-quotes"],"authorId":"CLxflG5QMMjg","authorSlug":"wayne-dyer","length":34,"dateAdded":"2020-07-10","dateModified":"2020-07-10"},{"_id":"cgBH5dPFK-jC","content":"I
+        care not so much what I am to others as what I am to myself. I will be rich
+        by myself, and not by borrowing.","author":"Michel de Montaigne","tags":["famous-quotes"],"authorId":"B2lKC8XK8Dh7","authorSlug":"michel-de-montaigne","length":110,"dateAdded":"2021-04-08","dateModified":"2021-04-08"},{"_id":"wPJ_Mb4EjPlE","content":"Mind
+        is everything: muscle, pieces of rubber. All that I am, I am because of my
+        mind.","author":"Paavo Nurmi","tags":["famous-quotes"],"authorId":"SckF0U8Iy85M","authorSlug":"paavo-nurmi","length":85,"dateAdded":"2019-12-13","dateModified":"2019-12-13"},{"_id":"nZtnCW3_6S","author":"Abraham
+        Lincoln","content":"I am not bound to win, but I am bound to be true. I am
+        not bound to succeed, but I am bound to live by the light that I have. I must
+        stand with anybody that stands right, and stand with him while he is right,
+        and part with him when he goes wrong.","tags":["inspirational","history","truth"],"authorId":"8k75S1ntV9GW","authorSlug":"abraham-lincoln","length":246,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"0mvbtxiIrRtQ","content":"When
+        I let go of what I am, I become what I might be.","author":"Laozi","tags":["wisdom"],"authorId":"qsaptKSHuLDU","authorSlug":"laozi","length":53,"dateAdded":"2021-01-19","dateModified":"2022-07-04"},{"_id":"JBJV1OZ3ARcw","content":"I
+        have no special talent. I am only passionately curious.","author":"Albert
+        Einstein","tags":["famous-quotes"],"authorId":"L76FRuEeGIUJ","authorSlug":"albert-einstein","length":57,"dateAdded":"2020-02-07","dateModified":"2020-02-07"},{"_id":"ubJ9lY7Ark","author":"Abraham
+        Lincoln","content":"All that I am, or hope to be, I owe to my angel mother.","tags":["family"],"authorId":"8k75S1ntV9GW","authorSlug":"abraham-lincoln","length":55,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"I5zMVI_HGM","content":"Sometimes
+        I am happy and sometimes not. I am, after all, a human being, you know. And
+        I am glad that we are sometimes happy and sometimes not. You get your wisdom
+        working by having different emotions.","author":"Yoko Ono","tags":["wisdom"],"authorId":"XtanJziaLn","authorSlug":"yoko-ono","length":200,"dateAdded":"2020-02-22","dateModified":"2020-02-22"},{"_id":"MftnYcoJsQc3","content":"I
+        gave my life to become the person I am right now. Was it worth it?","author":"Richard
+        Bach","tags":["famous-quotes"],"authorId":"t9lNqDH0TmYo","authorSlug":"richard-bach","length":68,"dateAdded":"2020-09-29","dateModified":"2020-09-29"},{"_id":"9pQeVJgxcsKT","content":"I
+        am always doing that which I cannot do, in order that I may learn how to do
+        it.","author":"Pablo Picasso","tags":["famous-quotes"],"authorId":"atthH9QDwIJB","authorSlug":"pablo-picasso","length":81,"dateAdded":"2019-12-13","dateModified":"2021-06-17"},{"_id":"HHvawzJ0YMs3","content":"I
+        am always doing that which I cannot do, in order that I may learn how to do
+        it.","author":"Pablo Picasso","tags":["famous-quotes"],"authorId":"atthH9QDwIJB","authorSlug":"pablo-picasso","length":81,"dateAdded":"2020-03-27","dateModified":"2020-03-27"},{"_id":"O6hRD-ilnV8","author":"Winston
+        Churchill","content":"I am always ready to learn although I do not always
+        like being taught.","tags":["humor"],"authorId":"FEM0nF4bj5r7","authorSlug":"winston-churchill","length":70,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"v88YjiHVIp","author":"Mia
+        Hamm","content":"I am building a fire, and everyday I train, I add more fuel.
+        At just the right moment, I light the match.","tags":["sports","competition"],"authorId":"aoDPmwXKCJ","authorSlug":"mia-hamm","length":105,"dateAdded":"2022-07-06","dateModified":"2022-07-08"},{"_id":"wuOv2OTZU0JD","content":"I
+        am of the opinion that my life belongs to the community, and as long as I
+        live it is my privilege to do for it whatever I can.","author":"Bernard Shaw","tags":["famous-quotes"],"authorId":"gk8iLycW0DFC","authorSlug":"bernard-shaw","length":128,"dateAdded":"2021-03-08","dateModified":"2021-03-08"},{"_id":"EbwcJxDo-wVb","content":"I
+        am a man of fixed and unbending principles, the first of which is to be flexible
+        at all times.","author":"Everett Dirksen","tags":["famous-quotes"],"authorId":"IPLorBCyTO3e","authorSlug":"everett-dirksen","length":96,"dateAdded":"2020-04-14","dateModified":"2020-04-14"},{"_id":"VFuYWRR2yM","author":"Winston
+        Churchill","content":"I am an optimist. It does not seem too much use being
+        anything else.","tags":[],"authorId":"FEM0nF4bj5r7","authorSlug":"winston-churchill","length":68,"dateAdded":"2022-03-12","dateModified":"2022-03-12"},{"_id":"QGY0TiFjpdj2","content":"When
+        I dare to be powerful, to use my strength in the service of my vision, then
+        it becomes less and less important whether I am afraid.","author":"Audre Lorde","tags":["famous-quotes"],"authorId":"ykLNBe560sqb","authorSlug":"audre-lorde","length":136,"dateAdded":"2019-02-20","dateModified":"2019-02-20"}]}'
+  recorded_at: Fri, 28 Oct 2022 16:55:07 GMT
+recorded_with: VCR 6.1.0

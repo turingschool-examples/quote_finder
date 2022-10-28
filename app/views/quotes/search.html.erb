@@ -1,0 +1,17 @@
+<h2>Search Results</h2>
+
+<p id="keyword">Results For: <%= @keyword %></p>
+
+<p id="total-count">Total Count: <%= @total_count %></p>
+
+<% @quotes.each do |quote| %>
+  <p>Quote: <%= quote.content %></p>
+  <p>Author: <%= quote.author %></p>
+  <% if !quote.tags_array.empty? %>
+    <p>Tags: </p>
+    <% quote.tags_array.each do |tag| %>
+      <p><%= tag %></p>
+    <% end %>
+  <% end %>
+  <br>
+<% end %>

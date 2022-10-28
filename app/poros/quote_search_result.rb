@@ -6,6 +6,5 @@ class QuoteSearchResult
     @content = api[:content]
     @author = api[:author]
     @tags_array = api[:tags]
-    
   end
 end

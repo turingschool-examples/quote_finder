@@ -9,7 +9,6 @@ class QuotableService
 
   def self.quote_search_endpoint(keyword)
     response = conn.get('/search/quotes', { query: keyword })
-    
     parse(response)
   end
 
