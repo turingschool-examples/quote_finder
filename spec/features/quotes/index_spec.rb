@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'quotes index' do
   it 'will display total number, keyword used, and list of top 10 quotes from search' do
+    quotes = QuoteFacade.search_term("extreme love")
     # As a visitor
     # When I visit the landing page '/'
     visit '/'
@@ -12,7 +13,7 @@ RSpec.describe 'quotes index' do
     # I am taken to '/quotes'
     expect(current_path).to eq quotes_path
     # Where I see the TOTAL number of quotes that were found for that keyword
-    # expect(page).to have_content("Total Count: #{total}")
+    expect(page).to have_content("Total Count: 123")
     # As well as the keyword that's being used for the search
     expect(page).to have_content("Search results for: 'extreme love'")
   end

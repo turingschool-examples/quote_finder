@@ -1,5 +1,7 @@
 <h2>Search results for: '<%= @search %>'</h2>
 <br>
+<p>Total Count: <%= @total %></p>
+<br>
 <p>Top 10 quotes:</p>
 <ol><% @quotes.each do |quote| %>
   <li><p>Quote - <%= quote.content %></p></li>
