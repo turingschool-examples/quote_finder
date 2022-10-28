@@ -10,4 +10,14 @@ RSpec.describe 'Landing Page' do
 
     expect(current_path).to eq("/quotes")
   end
+
+  it "I see total number of quotes that were found for that keyword" do
+    fill_in :keyword, with: 'I am'
+
+    click_on "Search for Quotes"
+
+    expect(page).to have_content "Number of quotes found:"
+    expect(page).to have_content "Search keyword(s): I am"
+
+  end
 end
