@@ -35,4 +35,14 @@ RSpec.describe 'quotes index' do
     end
   end
 
+  it 'will return less than 10 if there are less than 10 results' do
+    quotes = QuoteFacade.search_term("readily")
+
+    visit '/'
+    fill_in :query, with: 'readily'
+    click_on 'Search for Quotes'
+
+    expect(quotes.count).to eq 1
+  end
+
 end
