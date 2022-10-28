@@ -22,7 +22,7 @@ RSpec.describe 'Landing Page' do
 
         expect(current_path).to eq("/quotes")
 
-        expect(page).to have content('Quotes Matching Search For:')
+        expect(page).to have_content('Quotes Matching Search For:')
       end
     end
   end
