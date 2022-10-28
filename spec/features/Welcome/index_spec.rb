@@ -12,6 +12,8 @@ RSpec.describe 'Landing Page' do
   end
 
   it "I see total number of quotes that were found for that keyword" do
+    visit root_path
+    
     fill_in :keyword, with: 'I am'
 
     click_on "Search for Quotes"
