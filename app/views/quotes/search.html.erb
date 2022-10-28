@@ -1,0 +1,14 @@
+<h1>Results for '<%= params[:query] %>'</h1>
+
+<h3>Total Results: <%= @results_count %></h3>
+
+<div id='search_results'>
+  <% @quotes.first(10).each do |quote| %>
+    <div><u>Quote:</u> "<%= quote.content %>"</div>
+    <div><u>Author:</u> <%= quote.author %></div>
+    <div><u>Categories:</u> <% quote.categories.each do |category| %>
+        <div><%= category.capitalize %></div>
+      <% end %>
+    </div><br>
+  <% end %>
+</div>

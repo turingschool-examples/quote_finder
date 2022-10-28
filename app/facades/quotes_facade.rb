@@ -6,4 +6,9 @@ class QuotesFacade
       Quote.new(quote_data)
     end
   end
+
+  def self.results_count(search_params)
+    data = QuoteService.get_quotes(search_params)
+    data[:totalCount]
+  end
 end
