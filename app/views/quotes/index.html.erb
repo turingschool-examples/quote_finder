@@ -3,8 +3,7 @@
 
 <% @results.quotes.each_with_index do |quote, index| %>
   <div id="quote-<%= index %>">
-    <p><%= quote.content %> </p>
-    <p>Author: <%= quote.author %></p>
-    <p>Category: <%= quote.category.join(', ') %>
+    <p><strong><%= quote.content %> </strong> </p>
+    <p>Author: <%= quote.author %>   |  Category: <%= quote.category.join(', ') %> </p>
   </div>
 <% end %>
