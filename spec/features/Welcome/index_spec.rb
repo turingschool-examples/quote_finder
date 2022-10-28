@@ -26,7 +26,7 @@ RSpec.describe 'Landing Page' do
 
         expect(page).to have_content('Iris Murdoch')
         expect(page).to have_content('There is only one happiness in life, to love and be loved.')
-        expect(page).to have_content('tags:')
+        expect(page).to have_content('Tags:')
         expect(page).to have_content('George Sand')
         expect(page).to have_content('We can only learn to love by loving.')
         expect(page).to have_content('Tags:')
@@ -42,7 +42,6 @@ RSpec.describe 'Landing Page' do
       expect(current_path).to eq("/quotes")
 
       expect(page).to have_content('Quotes Matching Search For:')
-      expect(page).to_not have_content('Kaelin Sleevi')
       expect(page).to_not have_content('Tags:')
     end
   end
