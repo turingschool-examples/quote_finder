@@ -1,8 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe Quote do 
+RSpec.describe QuoteSearch do 
   before :each do 
-    quote_data = 
+    quote_data = {
+      count: 2,
+      totalCount: 2,
+      page: 1,
+      totalPages: 1,
+      lastItemIndex: 'null',
+      results: [
           {
               _id: "NcbrYrPkqmiL",
               content: "But man is not made for defeat. A man can be destroyed but not defeated.",
@@ -12,15 +18,17 @@ RSpec.describe Quote do
                   "wisdom"
               ]
             }
-    @quote = Quote.new(quote_data)
+      ]
+    }
+    @quote = QuoteSearch.new(quote_data)
   end
   it 'exists' do 
-    expect(@quote).to be_a Quote
+    expect(@quote).to be_a QuoteSearch
   end
 
   it 'has attributes' do 
-    expect(@quote.content).to be_a String
-    expect(@quote.author).to eq("Ernest Hemingway")
-    expect(@quote.category).to eq(['famous-quotes', 'wisdom'])
+    expect(@quote.num_results).to eq(2)
+    expect(@quote.quotes).to be_an Array
+    expect(@quote.quotes).to all be_a Quote
   end
 end
