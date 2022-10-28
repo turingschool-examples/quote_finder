@@ -1,9 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe QuoteFacade do
-  xit 'returns Quote data' do
-    query = QuoteFacade.new
-    results = query.quote_search('shadows')
+  it 'returns Quote data' do
+    results = QuoteFacade.quote_search('shadows')
 
     expect(results).to be_a(Array)
   end
