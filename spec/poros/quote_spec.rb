@@ -9,7 +9,7 @@ RSpec.describe Quote do
         "totalCount": 1,
         "page": 1,
         "totalPages": 1,
-        "lastItemIndex": null,
+        #"lastItemIndex": null,
         "results": [
             {
                 "_id": "r3wAKE9N-Nei",
@@ -32,6 +32,6 @@ RSpec.describe Quote do
     expect(quote).to be_a Quote
     expect(quote.content).to eq("Imagination will often carry us to worlds that never were. But without it we go nowhere.")
     expect(quote.author).to eq("Carl Sagan")
-    expect(quote.categories).to eq("famous-quotes")
+    expect(quote.categories.first).to eq("famous-quotes")
   end
 end
