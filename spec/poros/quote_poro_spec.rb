@@ -1,18 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe 'Quotes Poro' do
+RSpec.describe 'Quote Poro' do
   it 'exists and has attributes' do
-    data = {
-      totalCount: 1,
-      results: [
+    data ={
         _id: "Q2PbsPMcCJ",
         content: "A quote String",
         author: "Christopher Reeve",
         tags: [
           'wisdom'
         ]
-      ]
-    }
+      }
+
     quote = Quote.new(data)
 
     expect(quote).to be_a Quote

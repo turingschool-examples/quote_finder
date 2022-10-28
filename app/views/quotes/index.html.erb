@@ -1,0 +1,10 @@
+<h1>Quotes matching keyword: <%= params[:query] %></h1>
+<h2>Total Results: <%= @quotes_data[0] %></h2>
+
+<% @quotes_data[1].each do |quote| %>
+  <p>
+    <%= quote.content %><br>
+    Author: <%= quote.author %><br>
+    Categories: <%= quote.tags * ',' %><br>
+  </p>
+<% end %>
