@@ -14,4 +14,17 @@ RSpec.describe QuotesFacade do
 
     expect(total_count).to eq(151)
   end
+
+  it 'returns the total quotes found if there are less than 10 total' do
+    quotes = QuotesFacade.search_by_keyword("It is fatal to enter")
+
+    expect(quotes.count).to eq(4)
+  end
+
+  it 'if no keywords match a quote it returns an empty array of results' do
+    quotes = QuotesFacade.search_by_keyword("Sid")
+
+    expect(quotes.count).to eq(0)
+    expect(quotes).to eq([])
+  end
 end

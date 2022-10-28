@@ -21,8 +21,6 @@ RSpec.describe 'Landing Page' do
 
       click_on "Search for Quotes"
 
-      expect(current_path).to eq("/quotes")
-
       expect(page).to have_content("Total number of quotes found for 'I am': 151")
 
       quotes.each do |quote|
@@ -32,6 +30,20 @@ RSpec.describe 'Landing Page' do
           expect(page).to have_content(category)
         end
       end
+    end
+
+    it 'does not list any categories for a quote if there are none listed' do
+      quote = QuotesFacade.search_by_keyword('I am an optimist').first
+
+      visit root_path
+
+      fill_in :keyword, with: 'I am an optimist'
+
+      click_on "Search for Quotes"
+      
+      expect(page).to have_content(quote.author)
+      expect(page).to have_content(quote.quote)
+      expect(page).to_not have_content(quote.categories)
     end
   end
 end
