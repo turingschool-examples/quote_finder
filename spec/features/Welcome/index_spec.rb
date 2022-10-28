@@ -12,8 +12,8 @@ RSpec.describe 'Landing Page' do
       expect(current_path).to eq("/quotes")
     end
 
-    xit 'displays the total number of quotes for that keyword/lists the keyword/lists the top 10 quotes found' do
-      quotes = QuotesFacade.search_by_keyword
+    it 'displays the total number of quotes for that keyword/lists the keyword/lists the top 10 quotes found' do
+      quotes = QuotesFacade.search_by_keyword('I am')
 
       visit root_path
 
@@ -23,8 +23,14 @@ RSpec.describe 'Landing Page' do
 
       expect(current_path).to eq("/quotes")
 
+      expect(page).to have_content("Total number of quotes found for 'I am': 151")
+
       quotes.each do |quote|
-        expect(page).to have_content(quote)
+        expect(page).to have_content(quote.quote)
+        expect(page).to have_content(quote.author)
+        quote.categories.each do |category|
+          expect(page).to have_content(category)
+        end
       end
     end
   end
