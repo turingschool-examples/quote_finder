@@ -6,5 +6,5 @@
 <h2>Quote Matches</h2>
 <% @quotes.each do |quote| %>
   <p>Author: <%=quote.author%></p>
-  <p>Category: <%=quote.category%></p>
+  <p>Category: <%=quote.category.to_sentence%></p><br>
 <%end%>
