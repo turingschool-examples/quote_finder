@@ -1,0 +1,12 @@
+<h2>Search results for: '<%= @search %>'</h2>
+<br>
+<p>Top 10 quotes:</p>
+<ol><% @quotes.each do |quote| %>
+  <li><p>Quote - <%= quote.content %></p></li>
+  <p><strong>Author - <%= quote.author %></strong></p>
+  <p>Categories: <% quote.categories.each do |category| %> </p>
+    <p>* <%= category %></p>
+  <% end %>
+<% end %></ol>
+
+
