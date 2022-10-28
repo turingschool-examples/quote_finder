@@ -18,12 +18,10 @@ RSpec.describe 'Landing Page' do
 
     click_on "Search for Quotes"
 
-    expect(page).to have_content("20 quotes were found for the search 'I am'")
+    expect(page).to have_content("151 quotes were found for the search 'I am'")
 
-    within("quote_1") do
-      expect(page).to have_content('When I let go of what I am, I become what I might be.')
-      expect(page).to have_content('Author: Laozi')
-      expect(page).to have_content('Tags: wisdom')
-    end
+    expect(page).to have_content('If I am not for myself, who will be for me?')
+    expect(page).to have_content('Author: Rabbi Hillel')
+    expect(page).to have_content('Categories: famous-quotes and wisdom')
   end
 end

@@ -1,1 +1,11 @@
 <h1>Quotes from your Search</h1>
+
+<p><%= @quotes_info[:totalCount] %> quotes were found for the search '<%= params[:query] %>'</p>
+
+<% @quotes.each_with_index do |quote, index| %>
+  <div id="quote_<%= index + 1 %>">
+    <p>Quote: <%= quote.quote %></p>
+    <p>Author: <%= quote.author %></p>
+    <p>Categories: <%= quote.categories.to_sentence %></p>
+  </div>
+<% end %>
