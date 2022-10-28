@@ -1,0 +1,8 @@
+<ul>
+  <% @quotes.each do |quote| %>
+    <li><%= quote.author %></li>
+    <li><%= quote.content %></li>
+    <li><%= quote.tags %></li>
+    <br>
+  <% end %>
+</ul>

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
 class QuotesController < ApplicationController
-  def show; end
+  def index
+    @quotes = QuotesFacade.create_quotes(params[:query])
+  end
 end
