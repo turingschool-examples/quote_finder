@@ -9,11 +9,12 @@ RSpec.describe 'search results page', type: :feature do
         visit root_path
         fill_in :keyword, with: 'I am'
         click_on "Search for Quotes"
-        expect(page).to have_content('Total Number of Quotes:')
+        expect(page).to have_content('Total Number of Quotes: 151')
+        save_and_open_page
         expect(page).to have_content('Keyword Used for this Search: I am')
       end
 
-      it 'I also see a list of the top 10 quotes that were found. Under each quote I see the author & category(ies) or tags' do
+      xit 'I also see a list of the top 10 quotes that were found. Under each quote I see the author & category(ies) or tags' do
         visit root_path
         fill_in :keyword, with: 'I am'
         click_on "Search for Quotes"
@@ -27,7 +28,7 @@ RSpec.describe 'search results page', type: :feature do
         #end the div before the iteration ends
       end
 
-      it 'If there are less than 10 quotes found for a particular search, then only return the quotes that were found.' do
+      xit 'If there are less than 10 quotes found for a particular search, then only return the quotes that were found.' do
         visit root_path
         fill_in :keyword, with: 'Pizza'
         click_on "Search for Quotes"
@@ -35,7 +36,7 @@ RSpec.describe 'search results page', type: :feature do
         expect(page).to have_content('Add a Pet to this Application') #expect one quote
       end
 
-      it 'If the quote has no tags associated with it, do not list any categories for that quote.' do
+      xit 'If the quote has no tags associated with it, do not list any categories for that quote.' do
         visit root_path
         fill_in :keyword, with: 'Pizza'
         click_on "Search for Quotes"
