@@ -11,20 +11,6 @@ RSpec.describe 'Landing Page' do
     expect(current_path).to eq("/quotes")
   end
 
-#   As a visitor
-# When I visit the landing page '/'
-# And fill in the form with a keyword 
-# And hit 'Search for Quotes'
-# I am taken to '/quotes'
-# Where I see the TOTAL number of quotes that were found for that keyword
-# As well as the keyword that's being used for the search
-# As well as a list of the top 10 quotes that were found
-
-# For each quote listed, I should see: 
-# - The quote's author
-# - The quote's category(ies) (i.e. tags)
-
-
   it 'redirects to /quotes after searching keyword and returns the total number of quotes found, the search param and the top 10 quotes from results with the author/category' do
     visit root_path
 
