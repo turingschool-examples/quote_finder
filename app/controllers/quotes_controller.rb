@@ -1,5 +1,5 @@
 class QuotesController < ApplicationController
     def index
-        @quotes = QuotesFacade.get_list
+        @quotes = QuoteFacade.get_quotes(params[:keyword])
     end
 end
