@@ -1,0 +1,8 @@
+<h1> Qoutes Search Results</h1>
+<h2>Total Results: @quotes.count </h2>
+<% @quotes.each do |quote| %>
+    <%= quote.upc %>
+    <%= quote.description %>
+    <%= quote.brand_owner %>
+    <%= quote.ingredients %>
+<% end %>
