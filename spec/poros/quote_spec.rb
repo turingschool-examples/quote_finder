@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Quote do
   before :each do
-    quote_data = JSON.parse(file_fixture("single_quote_resonse.json").read, symbolize_names: true)
+    quote_data = JSON.parse(file_fixture("single_quote_response.json").read, symbolize_names: true)
     @quote = Quote.new(quote_data)
   end
 
@@ -11,6 +11,6 @@ RSpec.describe Quote do
     expect(@quote.id).to eq("CPhGOJeapNYZ")
     expect(@quote.author).to eq("Gail Sheehy")
     expect(@quote.content).to eq("To be tested is good. The challenged life may be the best therapist.")
-    expect(@quote.tages).to eq(["famous-quotes"])
+    expect(@quote.tags).to eq(["famous-quotes"])
   end
 end
