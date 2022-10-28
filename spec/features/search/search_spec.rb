@@ -10,22 +10,21 @@ RSpec.describe 'search results page', type: :feature do
         fill_in :keyword, with: 'I am'
         click_on "Search for Quotes"
         expect(page).to have_content('Total Number of Quotes: 151')
-        save_and_open_page
         expect(page).to have_content('Keyword Used for this Search: I am')
       end
 
-      xit 'I also see a list of the top 10 quotes that were found. Under each quote I see the author & category(ies) or tags' do
+      it 'I also see a list of the top 10 quotes that were found. Under each quote I see the author & category(ies) or tags' do
         visit root_path
         fill_in :keyword, with: 'I am'
         click_on "Search for Quotes"
 
-        expect(page).to have_content('Top 10 Quotes Found:')
-        within("#quote_#{@quote.id}") do 
-          expect(page).to have_content(@quote.author)
-          expect(page).to have_content(@quote.tags)
+        expect(page).to have_content('Top 10 Quotes Found')
+        within("#quote_#{0}") do 
+          expect(page).to have_content("Rabbi Hillel")
+          expect(page).to have_content("If I am not for myself, who will be for me? If I am not for others, what am I? And if not now, when?")
+          expect(page).to have_content("famous-quotes")
+          expect(page).to have_content("wisdom")
         end
-        #<div id='order_<%=order.id %>'> #change to doublequotes
-        #end the div before the iteration ends
       end
 
       xit 'If there are less than 10 quotes found for a particular search, then only return the quotes that were found.' do

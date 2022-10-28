@@ -2,3 +2,19 @@
 
 <p>Total Number of Quotes: <%= @quotes_total %></p>
 <p>Keyword Used for this Search: <%= @searched_string %></p>
+
+
+<h2>Top 10 Quotes Found</h2>
+  <% i = 0 %>
+  <% @quotes.each do |quote| %>
+  <div id="quote_<%="#{i}" %>">
+    <p>Author: <%= quote.author %></p>
+    <p>Quote: <%= quote.quote %></p>
+    <p>Categories: <% quote.categories.each do |category| %></p>
+      <p><%= category %></p>
+    <% end %>
+    <br>
+    <br>
+    <% i += 1 %>
+  </div>
+<% end %>
