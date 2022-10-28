@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Quote Facade', do
+RSpec.describe 'Quote Facade' do
   it '#top_10_query_quotes' do
     quotes = QuoteFacade.top_10_query_quotes("i am")
 
