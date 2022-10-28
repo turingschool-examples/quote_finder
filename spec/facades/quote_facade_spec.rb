@@ -11,4 +11,11 @@ RSpec.describe QuoteFacade do
       expect(array_of_quotes).to all( be_a(Quote) )
     end
   end
+
+  describe '#get_total(searched_string)' do
+    it 'returns a number of total quotes associated with that searched string' do
+      searched_string = "I am"
+      expect(QuoteFacade.get_total(searched_string)).to be_an Integer
+    end
+  end
 end
