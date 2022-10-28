@@ -1,18 +1,10 @@
 class Quote
-  attr_reader :id, :content, :author
+  attr_reader :id, :content, :author, :tags
 
   def initialize(attributes)
     @id = attributes[:_id]
     @content = attributes[:content]
     @author = attributes[:author]
-    @attributes = attributes
-  end
-
-  def tags
-    if @attributes[:tags]
-      @attributes[:tags].map do |tag|
-        tag
-      end
-    end
+    @tags = attributes[:tags].join(", ")
   end
 end

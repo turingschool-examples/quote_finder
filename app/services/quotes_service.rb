@@ -4,7 +4,7 @@ class QuotesService
   end
 
   def self.searched_quotes(keyword)
-    response = conn.get('/search/quotes', { query: keyword })
+    response = conn.get('/search/quotes', { query: keyword, limit: 150 })
     JSON.parse(response.body, symbolize_names: true)
     # require 'pry'; binding.pry
   end

@@ -1,1 +1,9 @@
 SOME QUOTES HERE
+
+Total Matching Quotes: <%= @quotes.count %>
+
+<% @top_ten_quotes.each do |quote| %>
+ <p> Author: <%= quote.author %> </p>
+ <p> Quote: <%= quote.content %> </p>
+ <p> Tags: <%= quote.tags %> </p>
+ <% end %>
