@@ -2,6 +2,6 @@
 
 <% @quotes.each do |quote| %>
  <ul>
-  <li><%= quote[:author] %> - <%= quote[:content] %> tags: <%= quote[:tags] %></li>
+  <li><%= quote[:author] %> - <%= quote[:content] %> Tags: <%= quote[:tags].first %></li>
  </ul>
 <% end %>

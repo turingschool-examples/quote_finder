@@ -29,7 +29,7 @@ RSpec.describe 'Landing Page' do
         expect(page).to have_content('tags:')
         expect(page).to have_content('George Sand')
         expect(page).to have_content('We can only learn to love by loving.')
-        expect(page).to have_content('tags:')
+        expect(page).to have_content('Tags:')
       end
     end
     it 'if there was nothing found with that keyword, nothing will be displayed' do
@@ -43,7 +43,7 @@ RSpec.describe 'Landing Page' do
 
       expect(page).to have_content('Quotes Matching Search For:')
       expect(page).to_not have_content('Kaelin Sleevi')
-      expect(page).to_not have_content('tags:')
+      expect(page).to_not have_content('Tags:')
     end
   end
 end
