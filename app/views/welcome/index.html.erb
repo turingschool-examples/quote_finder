@@ -1,10 +1,4 @@
 
-<nav class="navbar">
-    <div class="logo-container">
-        <span><%= image_tag("Quote-512.png", class: "quote") %>
-        <h1>Quote Finder</a></span>
-    </div>
-</nav>
 <div class="search-quotes">
     <p class="subtitle">Find The Perfect Quote!</p>
     <%= form_with url: '/quotes', local: true, method: 'get' do |f|%>

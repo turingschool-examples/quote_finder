@@ -1,0 +1,10 @@
+<h2>Search Results for "<%= params[:query] %>" (<%= @total_results_count %> total results):</h2>
+
+<h2>Top 10 Results:</h2>
+<% @top_10_quotes.each do |quote| %>
+  <div id="quote-<%= quote.id %>" class="quote-result">
+    <h3>"<%= quote.content %>"</h3>
+    <p>Author: <%= quote.author %><br>
+    Categories: <%= quote.tags.join(", ") %></p>
+  </div>
+<% end %>
