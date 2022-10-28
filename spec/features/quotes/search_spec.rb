@@ -4,7 +4,7 @@ RSpec.describe 'Quotes Search' do
   describe 'Happy Path' do
     before :each do
       search = 'I am'
-      @quotes = QuotesFacade.get_quotes(search)
+      @quotes = QuotesFacade.find_quotes(search)
 
       visit root_path
       fill_in :keyword, with: "#{search}"
