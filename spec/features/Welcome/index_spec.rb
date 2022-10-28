@@ -10,4 +10,6 @@ RSpec.describe 'Landing Page' do
 
     expect(current_path).to eq("/quotes")
   end
+
+  
 end
