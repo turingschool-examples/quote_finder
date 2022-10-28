@@ -4,7 +4,7 @@ class QuotableService
 
   def self.connection
     Faraday.new(
-      url: 'https://quotable.io/quotes'
+      url: 'https://quotable.io/search/quotes'
     )
   end
 
