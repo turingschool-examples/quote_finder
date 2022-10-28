@@ -73,6 +73,10 @@ GEM
     docile (1.4.0)
     erubi (1.11.0)
     execjs (2.8.1)
+    faraday (2.6.0)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.1)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -81,6 +85,11 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsonapi (0.1.1.beta6)
+      jsonapi-parser (= 0.1.1.beta3)
+      jsonapi-renderer (= 0.1.1.beta1)
+    jsonapi-parser (0.1.1.beta3)
+    jsonapi-renderer (0.1.1.beta1)
     launchy (2.5.0)
       addressable (~> 2.7)
     listen (3.1.5)
@@ -164,6 +173,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.1)
+    ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -218,7 +228,9 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
+  faraday
   jbuilder (~> 2.5)
+  jsonapi
   launchy
   listen (>= 3.0.5, < 3.2)
   orderly
