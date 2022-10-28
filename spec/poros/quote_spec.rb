@@ -18,8 +18,8 @@ RSpec.describe Quote do
 
     quote = Quote.new(data)
 
-    expect(quote.author).to equal("Iris Murdoch")
-    expect(quote.content).to equal("We can only learn to love by loving.")
-    expect(quote.categories).to eq (["famous-quotes"])
+    expect(quote.author).to eq("Iris Murdoch")
+    expect(quote.content).to eq("We can only learn to love by loving.")
+    expect(quote.categories).to eq(["famous-quotes"])
   end
 end
