@@ -8,7 +8,14 @@ RSpec.describe QuotableService do
 
     it 'has successful connection to api' do
       response = QuotableService.quote_search_endpoint("magic")
-      require 'pry'; binding.pry
+      
+      expect(response).to be_a(Hash)
+      expect(response[:count]).to be_a(Integer)
+      expect(response[:page]).to be_a(Integer)
+      expect(response[:results]).to be_a(Array)
+      expect(response[:results][0]).to be_a(Hash)
+      expect(response[:results][0][:content]).to be_a(String)
+      expect(response[:results][0][:author]).to be_a(String)
     end
   end
 end
