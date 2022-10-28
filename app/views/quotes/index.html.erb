@@ -1,9 +1,10 @@
-SOME QUOTES HERE
-
+<h2> Here are your quote results: </h2>
 Total Matching Quotes: <%= @quotes.count %>
 
 <% @top_ten_quotes.each do |quote| %>
- <p> Author: <%= quote.author %> </p>
- <p> Quote: <%= quote.content %> </p>
- <p> Tags: <%= quote.tags %> </p>
- <% end %>
+  <p> Author: <%= quote.author %> </p>
+  <p> Quote: <%= quote.content %> </p>
+  <% if quote.tags %>
+    <p> Tags: <%= quote.tags %> </p>
+  <% end%>
+<% end %>

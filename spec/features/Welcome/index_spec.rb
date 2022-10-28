@@ -16,6 +16,6 @@ RSpec.describe 'Landing Page' do
     fill_in :keyword, with: 'hands'
     click_on "Search for Quotes"
 
-    expect(page).to have_content("you ain't ready for these hands")
+    expect(page).to have_content("You can't shake hands with a clenched fist")
   end
 end
