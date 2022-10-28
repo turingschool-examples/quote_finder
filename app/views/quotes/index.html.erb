@@ -1,0 +1,17 @@
+<h1>Results For "<%= @search_params %>"</h1>
+<h3>Returned <%= @quotes.first.total_quotes%> Results</h3>
+
+<% @quotes.each do |quote| %>
+
+  <h3><%= quote.content %></h3>
+  <p>Author: <%= quote.author %></p>
+  <% if quote.tags != []%>
+    Categories:
+    <% quote.tags.each do |tag| %>
+      <p><%= tag %></p>
+    <% end %>
+  <% end %>
+  <br>
+  <br>
+
+<% end %>
