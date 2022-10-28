@@ -1,0 +1,17 @@
+<h1>Quotes about "<%= @keyword %>"</h1>
+
+<h3>Total number of quotes found: <%= @quote_count %></h3>
+
+<div id="top-10-quotes">
+  <h2>Top 10 Quotes</h2>
+  <ol>
+  <% @quotes.each do |quote| %>
+    <li><%= quote.content %></li>
+    <ul>
+      <li>Author: <%= quote.author %></li>
+      <li>Categories: <%= quote.categories.join(", ") %>
+      </li>
+    </ul>
+  <% end %>
+  </ol>
+</div>
