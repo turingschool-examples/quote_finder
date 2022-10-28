@@ -6,4 +6,8 @@ class QuotesController < ApplicationController
     @quotes = QuoteFacade.get_quotes_info(@searched_string)
   end
 
+  def author
+    # @author = AuthorFacade.get_author_info(params[:author])
+  end
+
 end

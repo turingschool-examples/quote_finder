@@ -8,6 +8,7 @@
   <% i = 0 %>
   <% @quotes.each do |quote| %>
   <div id="quote_<%="#{i}" %>">
+    <%= link_to "#{quote.author}", root_path, class: "navbar-brand" %>
     <p>Author: <%= quote.author %></p>
     <p>Quote: <%= quote.quote %></p>
     <p>Categories: <% quote.categories.each do |category| %></p>
