@@ -21,6 +21,7 @@ RSpec.describe Quote, :vcr, type: :object do
 end
 
 def quote_attributes_obj(quote)
+  expect(quote.id).to be_an String
   expect(quote.content).to be_an String
   expect(quote.author).to be_an String
   expect(quote.tags).to be_an Array

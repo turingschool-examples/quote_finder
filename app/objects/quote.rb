@@ -3,9 +3,11 @@
 class Quote
   attr_reader :content,
               :author,
-              :tags
+              :tags,
+              :id
 
   def initialize(data)
+    @id = data[:_id]
     @content = data[:content]
     @author = data[:author]
     @tags = data[:tags]
