@@ -1,5 +1,5 @@
-class Quote
-  def initialize(data)
+# frozen_string_literal: true
 
-  end
+class Quote
+  def initialize(data); end
 end
