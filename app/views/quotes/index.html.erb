@@ -1,0 +1,9 @@
+<h2>Search results for: <%= params[:query] %></h2>
+<% @quotes.each_with_index do |quote, index| %>
+  <div id='quote-<%= index %>'>
+    <h3><%= quote.content %></h3p>
+    <p>Author: <%= quote.author %></p>
+    <p>Category(ies): <%= quote.tags %></p>
+  </div>
+  <br>
+<% end %>
