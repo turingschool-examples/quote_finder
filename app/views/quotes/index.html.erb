@@ -1,0 +1,11 @@
+<h3>Quotes Found:</h3>
+<p>keyword: <%= @keyword %></p>
+<p>results found: <%= @quotes.count %></p>
+<p>ten best matches:</p>
+<div id="best-matches">
+  <% @quotes[0..9].each do |quote| %>
+    <p>quote: <%= quote.content %></p>
+    <p>author: <%= quote.author %></p>
+    <p>categories: <%= quote.categories %></p>
+  <% end %>
+</div>
