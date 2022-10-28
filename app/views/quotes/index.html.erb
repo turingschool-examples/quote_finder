@@ -3,7 +3,9 @@
   <div id='quote-<%= index %>'>
     <h3><%= quote.content %></h3p>
     <p>Author: <%= quote.author %></p>
-    <p>Category(ies): <%= quote.tags %></p>
+    <% if quote.tags.exists? %>
+      <p>Category(ies): <%= quote.tags %></p>
+    <% end %>
   </div>
   <br>
 <% end %>
