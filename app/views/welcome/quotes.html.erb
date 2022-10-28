@@ -1,0 +1,8 @@
+<h3><%= @quotes[:total] %> total results found for "<%= @search %>"</h3>
+
+<% @quotes[:quotes].each do |quote| %>
+    <p>"<%= quote[:quote] %>"</p>
+    <p>by: <%= quote[:author] %></p>
+    <p>tags: <%= quote[:categories] %></p>
+    <br>
+<% end %>
