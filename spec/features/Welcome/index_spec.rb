@@ -58,7 +58,7 @@ RSpec.describe 'Landing Page' do
     expect(page).to_not have_content("Quote:")
   end
 
-  it 'edge case - ' do
+  it 'edge case - no tags present ' do
     output = {
     "count": 1,
     "results": [
@@ -77,9 +77,14 @@ RSpec.describe 'Landing Page' do
 
     visit root_path
 
-    fill_in :keyword, with: 'Aleisha'
+    fill_in :keyword, with: 'Jordan'
 
     click_on "Search for Quotes"
 
+    expect(page).to have_content "Number of quotes found: 1"
+    expect(page).to have_content "Search keyword(s): Jordan"
+    expect(page).to have_content "Quote: I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed."
+    expect(page).to have_content "Author: Michael Jordan"
+    expect(page).to_not have_content "Category:"
   end
 end

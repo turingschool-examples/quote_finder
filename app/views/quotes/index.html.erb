@@ -6,8 +6,12 @@
 
   <p> Quote: <%= quote.content %> </p>
   <p> Author: <%= quote.author %> </p>
+
+  <% if quote.tags %>
   <p> Category: <% quote.tags.each do |tag| %> </p>
     <%= tag %>
     <% end %>
+  <% end %>
+  
   <% end %>
 
