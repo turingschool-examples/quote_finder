@@ -1,11 +1,12 @@
 <h1>Search Results</h1>
-
+<p><%= "#{@total_count} quotes found!" %></p>
+<h3>Top 10 Quotes</h3>
 <ul>
   <% @quotes.each do |quote| %>
     <li>
       <p><%= quote.content %></p>
       <p>- <%= quote.author %></p>
-      <p>Tags: </p>
+      <p>Tags: <%= quote.tags %></p>
     </li>
   <% end %>
 </ul>

@@ -1,6 +1,6 @@
 class QuotesService
-  def self.top_10(query)
-    response = conn.get("/search/quotes?query=#{query}&limit=10")
+  def self.search_quotes(query)
+    response = conn.get("/search/quotes?query=#{query}")
     JSON.parse(response.body, symbolize_names: true)
   end
 
