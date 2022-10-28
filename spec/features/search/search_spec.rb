@@ -20,28 +20,28 @@ RSpec.describe 'search results page', type: :feature do
 
         expect(page).to have_content('Top 10 Quotes Found')
         within("#quote_#{0}") do 
-          expect(page).to have_content("Rabbi Hillel")
+          expect(page).to have_content("Rabbi Hillel") # I don't know how to make this dynamic at the moment
           expect(page).to have_content("If I am not for myself, who will be for me? If I am not for others, what am I? And if not now, when?")
           expect(page).to have_content("famous-quotes")
           expect(page).to have_content("wisdom")
         end
       end
 
-      xit 'If there are less than 10 quotes found for a particular search, then only return the quotes that were found.' do
+      it 'If there are less than 10 quotes found for a particular search, then only return the quotes that were found.' do
         visit root_path
-        fill_in :keyword, with: 'Pizza'
+        fill_in :keyword, with: 'corn'
         click_on "Search for Quotes"
 
-        expect(page).to have_content('Add a Pet to this Application') #expect one quote
+        expect(page).to have_content('Total Number of Quotes: 1')
+        expect(page).to have_content('Top 10 Quotes Found')
+        within("#quote_#{0}") do 
+          expect(page).to have_content("Torquato Tasso")
+          expect(page).to have_content("The day of fortune is like a harvest day, we must be busy when the corn is ripe.")
+          expect(page).to have_content("wisdom")
+        end
       end
 
-      xit 'If the quote has no tags associated with it, do not list any categories for that quote.' do
-        visit root_path
-        fill_in :keyword, with: 'Pizza'
-        click_on "Search for Quotes"
-
-        expect(page).to have_content('Add a Pet to this Application') #not list any categories
-      end
+      xit 'If the quote has no tags associated with it, do not list any categories for that quote.'
     end
   end
 end
