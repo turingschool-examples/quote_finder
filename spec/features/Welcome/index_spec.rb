@@ -5,9 +5,7 @@ RSpec.describe 'Landing Page' do
     visit root_path
 
     fill_in :keyword, with: 'I am'
-
     click_on "Search for Quotes"
-
     expect(current_path).to eq("/quotes")
   end
 end
