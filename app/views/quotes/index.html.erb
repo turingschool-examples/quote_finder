@@ -1,0 +1,9 @@
+<h2>Results for "<%= params[:query] %>"</h2>
+<h3>Total Quotes: <%= @data[:totalCount] %></h3>
+
+<% @quotes.each do |quote| %>
+    <p><strong>Author: </strong><%= quote.author %></p>
+    <p><strong>Content: </strong><%= quote.content %></p>
+    <p><strong>Categories: </strong><%= quote.categories.each do |category| %>
+    <%= category %><br><% end %></p>
+<% end %>
