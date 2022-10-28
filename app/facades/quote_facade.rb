@@ -1,7 +1,7 @@
 class QuoteFacade
   def self.get_quotes_info(searched_string)
     json = QuoteService.get_quotes_info(searched_string)
-    json[:results][0..9].map do |quote_data|
+    json[:results].map do |quote_data|
       Quote.new(quote_data)
     end
   end
