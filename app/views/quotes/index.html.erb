@@ -1,14 +1,14 @@
 <h1>Quote Results</h1>
 
-<h3>Total Count: <%= @quotes.count %></h3>
+<h3>Total Count: <%= @quotes[:total_count] %></h3>
 
-<!--<div id="keyword">-->
-<!--  <h3>Keyword Used: <%#= @quotes. %></h3>-->
-<!--</div>-->
+<div id="keyword">
+  <h3>Keyword Used: <%= @quotes[:query] %></h3>
+</div>
 
 <div id="top_10_quote_results">
   <ol>
-    <% @quotes.each do |quote| %>
+    <% @quotes[:results].each do |quote| %>
       <li><%= quote.content %>
       <p>Author: <%= quote.author %></p>
       <p>Category: <%= quote.category %></p></li>

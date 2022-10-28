@@ -8,11 +8,11 @@ RSpec.describe 'quotes index page' do
 
     click_on "Search for Quotes"
 
-    expect(page).to have_content("Total Count: 20")
+    expect(page).to have_content("Total Count: 151")
 
-    # within("#keyword") do
-    # expect(page).to have_content("Keyword Used: I am")
-    # end
+    within("#keyword") do
+    expect(page).to have_content("Keyword Used: I am")
+    end
   end
 
   it 'displays the lop list of 10 quotes along with the author and category' do
@@ -22,7 +22,7 @@ RSpec.describe 'quotes index page' do
 
     click_on "Search for Quotes"
 
-    quote = QuoteFacade.quote_search('I am').first
+    quote = QuoteFacade.quote_search('I am')[:results].first
 
     within("#top_10_quote_results") do
       expect(page).to have_content("#{quote.content}")
