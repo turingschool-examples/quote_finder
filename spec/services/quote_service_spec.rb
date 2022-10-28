@@ -13,7 +13,8 @@ describe QuoteService do
         expect(quote_data[:author]).to be_a(String)
 
         expect(quote_data).to have_key :tags
-        expect(quote_data[:tags]).to be_a(String)
+        expect(quote_data[:tags]).to be_an Array
+        expect(quote_data[:tags].first).to be_a(String)
 
         expect(quote_data).to have_key :content
         expect(quote_data[:content]).to be_a(String)
