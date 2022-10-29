@@ -1,0 +1,22 @@
+<h3 id='keyword'>
+  Search Keyword: <%=@quotes_search[:keyword]%>
+</h3>
+
+<h3 id='total_results'>
+  Total Results: <%=@quotes_search[:total_results]%>
+</h3>
+<h3>
+  Top 10 Results
+</h3>
+<ul id='quotes'>
+  <%@quotes_search[:quotes].each do |quote| %>
+    <li>
+      Quote: <%=quote.content%> <br>
+      Author: <%=quote.author%> <br>
+      <% unless quote.tags.empty? %>
+        Category: <%=quote.tags.to_sentence%> <br>
+      <% end %>
+    </li>
+
+  <% end%>
+</ul>
