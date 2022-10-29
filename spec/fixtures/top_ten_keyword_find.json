@@ -1,0 +1,141 @@
+{
+  "count": 10,
+  "totalCount": 51,
+  "page": 1,
+  "totalPages": 6,
+  "lastItemIndex": 10,
+  "results": [
+      {
+          "_id": "dwyaOypDiT0t",
+          "content": "Love isn't something you find. Love is something that finds you.",
+          "author": "Loretta Young",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "lPJTazTFfCqx",
+          "authorSlug": "loretta-young",
+          "length": 64,
+          "dateAdded": "2019-08-08",
+          "dateModified": "2019-08-08"
+      },
+      {
+          "_id": "4P-rQAyVux",
+          "content": "Never find fault with the absent.",
+          "author": "Alexander Pope",
+          "tags": [
+              "wisdom"
+          ],
+          "authorId": "_gz-cfmqA1mr",
+          "authorSlug": "alexander-pope",
+          "length": 33,
+          "dateAdded": "2019-06-27",
+          "dateModified": "2019-06-27"
+      },
+      {
+          "_id": "EFIK1GrN6Otv",
+          "content": "You cannot find yourself by going into the past. You can find yourself by coming into the present.",
+          "author": "Eckhart Tolle",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "I6wUbDqsmByX",
+          "authorSlug": "eckhart-tolle",
+          "length": 98,
+          "dateAdded": "2021-02-12",
+          "dateModified": "2021-02-12"
+      },
+      {
+          "_id": "Yul4uqMwfA1",
+          "author": "Arnold Palmer",
+          "content": "What other people may find in poetry or art museums, I find in the flight of a good drive.",
+          "tags": [
+              "sports",
+              "competition"
+          ],
+          "authorId": "HpPpeEC3D_2",
+          "authorSlug": "arnold-palmer",
+          "length": 90,
+          "dateAdded": "2022-07-06",
+          "dateModified": "2022-07-08"
+      },
+      {
+          "_id": "kB5So_A-TJv",
+          "content": "Inspiration exists, but it has to find us working.",
+          "author": "Pablo Picasso",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "atthH9QDwIJB",
+          "authorSlug": "pablo-picasso",
+          "length": 50,
+          "dateAdded": "2020-01-15",
+          "dateModified": "2020-01-15"
+      },
+      {
+          "_id": "nx2M9kL0EgcI",
+          "content": "Do good by stealth, and blush to find it fame.",
+          "author": "Alexander Pope",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "_gz-cfmqA1mr",
+          "authorSlug": "alexander-pope",
+          "length": 46,
+          "dateAdded": "2020-11-13",
+          "dateModified": "2020-11-13"
+      },
+      {
+          "_id": "1wKZ34XOonuF",
+          "content": "Learning is finding out what you already know.",
+          "author": "Richard Bach",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "t9lNqDH0TmYo",
+          "authorSlug": "richard-bach",
+          "length": 46,
+          "dateAdded": "2020-03-11",
+          "dateModified": "2020-03-11"
+      },
+      {
+          "_id": "JnLIpceVj6AD",
+          "content": "Either I will find a way, or I will make one.",
+          "author": "Philip Sidney",
+          "tags": [
+              "famous-quotes"
+          ],
+          "authorId": "5b_eoqDDGmv9",
+          "authorSlug": "philip-sidney",
+          "length": 45,
+          "dateAdded": "2020-01-26",
+          "dateModified": "2020-01-26"
+      },
+      {
+          "_id": "ZNmlz6RsYN",
+          "content": "Wise men make more opportunities than they find.",
+          "author": "Francis Bacon",
+          "tags": [
+              "wisdom"
+          ],
+          "authorId": "zWIvsqe0NWrg",
+          "authorSlug": "francis-bacon",
+          "length": 48,
+          "dateAdded": "2019-06-13",
+          "dateModified": "2019-06-13"
+      },
+      {
+          "_id": "rypL5kmdIg8",
+          "content": "A really great talent finds its happiness in execution.",
+          "author": "Johann Wolfgang von Goethe",
+          "tags": [
+              "famous-quotes",
+              "happiness"
+          ],
+          "authorId": "aW1ZR-8LuS28",
+          "authorSlug": "johann-wolfgang-von-goethe",
+          "length": 55,
+          "dateAdded": "2020-07-10",
+          "dateModified": "2020-07-10"
+      }
+  ]
+}
