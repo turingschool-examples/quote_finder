@@ -1,10 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe QuoteService do
+RSpec.describe QuotesService do
   describe 'class methods' do
     describe 'keyword_quotes' do
+      
       it 'returns the top 10 quotes associated with a keyword' do
-        quotes = QuoteService.keyword_quotes(keyword)
+        quotes = QuotesService.keyword_quotes('find')
         expect(quotes[:results].count).to eq(10)
         expect(quotes[:totalCount]).to be_an(Integer)
         expect(quotes[:results].first[:author]).to be_a(String)
